@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--맨 위쪽 프로필 및 알림 설정 레이아웃-->
+    <RelativeLayout
+        android:id="@+id/topArea"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+
+        <TextView
+            android:id="@+id/drawText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_string"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+
+            />
+
+        <Switch
+            android:id="@+id/alarmSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="@string/alarm_on_off"
+            android:textColor="@color/colorBlack"
+            android:layout_alignTop="@id/drawText"
+            />
+
+
+    </RelativeLayout>
+
+    <!--구분선1-->
+    <View
+        android:id="@+id/divideLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivideLine"
+        android:layout_below="@id/topArea"
+        >
+    </View>
+
+    <!--퀵 메뉴-->
+
+    <RelativeLayout
+        android:id="@+id/quickMenuArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divideLine1">
+
+        <RelativeLayout
+            android:id="@+id/quickMenu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:text="@string/menu1"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/quickMenu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quickMenu1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:text="@string/menu2"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="mainButtonGap">80dp</dimen>
+
+</resources>
